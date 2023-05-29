@@ -1,0 +1,91 @@
+#header_area{
+    .top_header_area{
+        background: $pcolor;
+        padding: $paddingSM;
+        position: relative;
+        .mobile_bars{
+            display: none;
+        }
+        p{
+            font: {
+                size: 14px;
+                weight: $fontWMD;
+            }
+            color: $whitecolor;
+            margin: 8px 0 0;
+            i{
+                display: inline-block;
+                margin-right: 8px;
+            }
+        }
+        
+    }
+    
+    // main header area styles
+
+    .main_header{
+       background: $whitecolor;
+       padding: 25px 0;
+       .logo_area{
+        flex-basis: 30%;
+       }
+       .main_menu{
+        flex-basis: 70%;
+        margin-top: 10px;
+        ul{
+            text-align: right;
+            display: flex;
+            justify-content: end;
+            li{
+                margin-left: 25px;
+                a{
+                    color: $bkcolor;
+                    font: {
+                        size:16px;
+                        weight: $fontWMD;
+                        
+                    }
+                    &:hover{
+                        color: pink;
+                    }
+                }
+            }
+        }
+       }
+       @media only screen and (min-width:$small) and (max-width:$medium) {
+       
+        .main_menu{
+            background: $pcolor;
+            position: relative;
+            width: 96%;
+            left:-9999px;
+            ul{
+                flex-direction: column;
+                text-align: left;
+                li{
+                   margin-left: 0;
+                   margin-bottom: 5px;
+                   &:last-child{
+                    margin-bottom: 0;
+                   } 
+                   a{
+                    color: $whitecolor;
+                    display: block;
+                    padding: 10px 15px;
+                    &:hover{
+                        background: $bkcolor;
+                        color: $whitecolor;
+                        border-radius: 15px;
+                    }
+                   }
+                }
+
+            }
+          &.open{
+            left:10px;
+          }
+        }
+        
+       }
+    }
+    }

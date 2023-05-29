@@ -1,0 +1,141 @@
+// color
+$pcolor:#392e4a;
+$scolor:#cf2f74;
+$bgcolor:#ecd9dd;
+$whitecolor:#efeff0;
+$bkcolor:#043b5c;
+
+// fonts
+
+$fontWSM:400;
+$fontWMD:600;
+$fontWXL:900;
+
+body,
+p{
+    font: {
+        size:16px;
+    weight: $fontWSM;
+    }
+    
+}
+p{
+    margin: 0 0 15px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: $fontWXL;
+    margin: 0 0 15px;
+    line-height: 1.5em;
+}
+// paddings
+
+// main width
+
+$small: 200px;
+$medium: 767px;
+.container{
+   width: 1400px;
+   margin: 0 auto; 
+   @media only screen and (min-width: $small) and (max-width:$medium) {
+    width: 96%;
+
+    
+   }
+}
+$paddingSM: 10px 0;
+.paddingXL {
+    padding: 60px 0;
+    @media only screen and (min-width:$small) and (max-width:$medium) {
+        padding: 25px 0;
+    
+        
+       }
+}
+
+//margin
+.m-top{
+   margin-top: 45px;
+   @media only screen and (min-width:$small) and (max-width:$medium) {
+    margin-top: 25px;
+
+    
+   } 
+}
+
+// social area styles
+.social_area{
+    ul{
+      text-align: right;
+      li{
+        margin-left: 15px;
+      } 
+      a{
+        display: block;
+        background: $scolor;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        color: $bkcolor;
+        text-align: center;
+        padding: 7px;
+        border-radius: 5px;
+        padding-top: 6px;
+        i{
+            margin: 0;
+        }
+        &:hover{
+            background: #F1C40F;
+            color: black ;
+            
+        }
+    }
+
+      } 
+    }
+
+    // call to Action button
+    .btn-cta{
+        background: $pcolor;
+        color: $whitecolor;
+        display: inline-block;
+        padding: 12px 25px;
+        font-weight: $fontWMD;
+        border-radius: 5px;
+        margin-top: 7px;
+        &:hover{
+            background: $scolor;
+            color: black;
+        }
+
+    }
+
+    //title styles\
+    .title{
+        font-size: 60px;
+        line-height: 1em;
+        margin-bottom: 10px;
+        @media only screen and (min-width:$small) and (max-width:$medium) {
+           
+        font-size:25px ;
+            
+           }
+
+    }
+
+    //sub title styles
+
+    .sub-title{
+        font: {
+            size:25px;
+            weight: $fontWMD;
+        }
+        line-height: 1em;
+        margin-bottom: 0 ;
+        @media only screen and (min-width:$small) and (max-width:$medium) {
+           
+        font-size:15px ;
+            
+           }
+
+    }

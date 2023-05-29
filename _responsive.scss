@@ -1,0 +1,148 @@
+
+// mobile screen
+@media only screen and (min-width:$small) and (max-width:$medium) {
+    //header area styles
+    #header_area{
+        .iner{
+            display: block;
+        } 
+    
+    .top_header_area{
+        .addres, 
+        .phone_numner, 
+        .email{
+            display: none;
+        }
+        
+        .social_area {
+            ul {
+                text-align: center;
+    
+            }
+        }
+        .mobile_bars{
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 12px;
+            i{
+              color: $whitecolor; 
+              font-size: 25px;
+              cursor: pointer; 
+            }
+
+        }
+        }
+    // main menu styles
+    .main_header{
+        .logo_area{
+           width: 200px;
+           margin: 0 auto; 
+        }
+    }
+    }
+    
+    //hero area styles
+    #hero_area {
+      .iner{
+        flex-direction: column;
+      } 
+      .admin_info{
+        flex-basis: 100%;
+        padding: 20px;
+        order: 2;
+      }
+      .admin_image{
+        order: 1;
+        flex-basis: 100%;
+      } 
+    }
+
+    //about area styles;
+    #about_area {
+      .iner{
+        flex-direction: column;
+      }
+      .about_numbers{
+        flex-basis: 100%;
+        .child_about{
+          h4{
+            font-size: 25px;
+
+          }
+          h6{
+            font-size: 14px;
+          }
+        }
+      }
+      .about_info{
+        flex-basis: 100%;
+        padding: 20px;
+        h3{
+          font-size: 25px;
+        }
+        h6{
+          font-size: 15px;
+          
+        }
+      }
+    }
+    // srevice area styles
+    #service_area{
+      .iner{
+        flex-direction: column;
+      }
+      .child_service{
+        margin-bottom: 25px;
+        padding: 20px;
+        i{
+          margin-bottom: 10px;
+        }
+        h4{
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+
+
+    //projects area styles
+    #projects_area{
+      .iner-grid{
+        display: block;
+      }
+      .child_project{
+        margin-bottom: 15px;
+      }
+    }
+
+    //blog area styles
+    #blog_area{
+      .iner{
+        flex-direction: column;
+      }
+      .child_blog{
+        margin-bottom: 25px;
+      }
+    }
+
+    // contact form
+    #contact_area{
+      .iner , .contact_info{
+        flex-direction: column;
+      }
+      .contact_info{
+        div{
+          padding: 20px;
+        margin-bottom: 20px;
+        }
+        iframe{
+          margin-top: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+   }
